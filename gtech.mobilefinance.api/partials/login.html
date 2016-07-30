@@ -1,0 +1,16 @@
+<div class="login">
+    <h1>Mobile Finance</h1>
+    <form class="form" style="margin-top: 20px">
+        <div class="form-group">
+            <label for="username">Username</label> {{ gho }}
+            <input type="text" class="form-control" id="username" placeholder="Username" ng-model="user.username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" ng-model="user.password">
+        </div>
+        <a>Forgot Password?</a>
+        <hr />
+        <button type="submit" class="btn btn-primary pull-right" ng-click="user.login()">Log In</button>
+    </form>
+</div>

@@ -1,8 +1,7 @@
 ﻿'use strict';
 
-var app = angular.module('mobileFinanceApp');
-
-app.factory('Base', function ($http, $q) {
+angular.module('mobileFinanceApp')
+.factory('Base', function ($http, $q) {
 
     // Constructor
     var Base = function (propValues) {

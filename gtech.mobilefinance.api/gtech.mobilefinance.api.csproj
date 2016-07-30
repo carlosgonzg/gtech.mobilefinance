@@ -547,10 +547,13 @@
     <Content Include="js\bootstrap\package.json" />
     <Content Include="js\bootstrap\README.md" />
     <Content Include="partials\about.html" />
-    <Content Include="partials\main.html" />
+    <Content Include="partials\login.html" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\controllers\about.js" />
-    <Content Include="scripts\controllers\main.js" />
+    <Content Include="scripts\controllers\login.js" />
+    <Content Include="scripts\controllers\navigation.js" />
+    <Content Include="scripts\controllers\session.js" />
+    <Content Include="scripts\services\authinterceptor.js" />
     <Content Include="scripts\services\base.js" />
     <Content Include="scripts\services\user.js" />
     <Content Include="Web.config">

@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name mobileFinanceApp
- * @description
- * # mobileFinanceApp
- *
- * Main module of the application.
- */
 angular
   .module('mobileFinanceApp', [
     'ngAnimate',
@@ -17,14 +9,15 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'toaster'
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'partials/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+      .when('/login', {
+        templateUrl: 'partials/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
       })
       .when('/about', {
         templateUrl: 'partials/about.html',

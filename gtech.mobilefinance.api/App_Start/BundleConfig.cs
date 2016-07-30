@@ -12,7 +12,7 @@ namespace gtech.mobilefinance.api
                         "~/js/jquery/dist/jquery.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/js/bootstrap/dist/bootstrap.min.js"));
+                      "~/js/bootstrap/dist/js/bootstrap.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/js/angular/angular.min.js", 
@@ -24,16 +24,20 @@ namespace gtech.mobilefinance.api
                       "~/js/angular-resource/angular-resource.min.js",
                       "~/js/angular-route/angular-route.min.js",
                       "~/js/angular-sanitize/angular-sanitize.min.js",
-                      "~/js/angular-touch/angular-touch.min.js"
+                      "~/js/angular-touch/angular-touch.min.js",
+                      "~/js/angular-toaster/toaster.min.js"
                       ));
 
             bundles.Add(new ScriptBundle("~/scripts").Include(
                       "~/scripts/app.js",
                       "~/scripts/services/*.js",
+                      "~/scripts/controllers/session.js",
                       "~/scripts/controllers/*.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/toaster.min.css",
                       "~/Content/site.css"));
         }
     }
